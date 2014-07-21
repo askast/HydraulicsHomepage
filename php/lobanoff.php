@@ -10,7 +10,14 @@
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
   <link rel="stylesheet" href="../css/layouts/side-menu.css">
   <link rel="stylesheet" href="../css/user.css">
+  <link rel="stylesheet" href="../css/jquery.jqplot.css">
 
+  <script src="../js/jquery.js"></script>
+  <script src="../js/jquery.jqplot.min.js"></script>
+  <script src="../js/jqplot.cursor.js"></script>
+  <script src="../js/jqplot.canvasAxisLabelRenderer.js"></script>
+  <script src="../js/jqplot.canvasTextRenderer.js"></script>
+  <script src="../js/jqplot.BezierCurveRenderer.js"></script>
 
 </head>
 <body>
@@ -76,12 +83,15 @@
                       <option value="14">Lbs/S</option>
                   </select>
                 </div>
-                <div class="pure-u-2-5 pure-u-md-1-3" id="ajaxresult"></div>
+                <div class="pure-u-2-5 pure-u-md-2-3" id="ajaxresult"></div>
               </div>
               <div class="pure-g">
                 <div class="pure-u-1-5 pure-u-md-1-3">
                   <label for="z">Number of vanes</label>
                   <input class="pure-u-4-5" id="z" type="text" required>
+                </div>
+                <div class="pure-u-4-5 pure-u-md-1-3">
+                  <div id="VaneSelect" style="height:400px; width:100%"></div>
                 </div>
               </div>
               <div class="pure-g">
@@ -99,15 +109,22 @@
                 </div>
 
               </div>
-
-                  <button type="submit" class="pure-button pure-button-primary">Submit</button>
-              </fieldset>
+              <button type="submit" class="pure-button pure-button-primary">Submit</button>
+            </fieldset>
           </form>
+
         </p>
+      </div>
+    </div>
+  </div>
+  <div id="chart1" style="height:400px;width:300px; "></div>
 
 
   <script src="../js/ui.js"></script>
-  <script type="text/javascript" src="../js/jquery.js"></script>
   <script src="../js/formpop.js"></script>
+  <script src="../js/plots.js"></script>
+  <script>
+
+  </script>
 </body>
 </html>
