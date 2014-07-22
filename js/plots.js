@@ -37,10 +37,10 @@ $(document).ready(function(){
       markerOptions: {
         show: false
       },
-      renderer:$.jqplot.BezierCurveRenderer
-      // rendererOptions: {
-        // smooth: true
-      // }
+      // renderer:$.jqplot.BezierCurveRenderer
+      rendererOptions: {
+        smooth: true
+      }
     },
     cursor: {
       show: true,

@@ -19,6 +19,10 @@
   <script src="../js/jqplot.canvasTextRenderer.js"></script>
   <script src="../js/jqplot.BezierCurveRenderer.js"></script>
 
+  <!-- <script src="http://code.highcharts.com/highcharts.js"></script>
+
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script> -->
+
 </head>
 <body>
   <div id="layout">
@@ -92,6 +96,7 @@
                 </div>
                 <div class="pure-u-4-5 pure-u-md-1-3">
                   <div id="VaneSelect" style="height:400px; width:100%"></div>
+                  <div id="report"></div>
                 </div>
               </div>
               <div class="pure-g">
@@ -117,8 +122,6 @@
       </div>
     </div>
   </div>
-  <div id="chart1" style="height:400px;width:300px; "></div>
-
 
   <script src="../js/ui.js"></script>
   <script src="../js/formpop.js"></script>
